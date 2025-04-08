@@ -1,0 +1,11 @@
+type Profession {
+    id: ID!
+    name: String
+    category_id: ID
+    description: String
+}
+
+type Query {
+    professions(name: String, category_id: ID): [Profession]
+        @field(resolver: "App\\GraphQL\\Queries\\ProfessionQuery@resolve")
+}

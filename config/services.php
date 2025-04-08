@@ -14,6 +14,17 @@ return [
     |
     */
 
+    'freelancing' => [
+        'api_url' => env('FREELANCING_API_URL', 'http://universities.hipolabs.com'),
+        'api_key' => env('FREELANCING_API_KEY', ''),
+    ],
+    'whatsapp' => [
+        'api_url' => env('api_url', 'https://click.one.sky4system.com/api/user/create-text'),
+        'device_id' => env('device_id', '3GH4XGR8P'),
+        'device_token' => env('device_token', 'lLWd1H8xHSw6cjaGwD2BhPE04e1yPBBq05QRgYnx44lTiyxyieCbCfMeA1V9uxeuoYIGjsyAo3zhYJ288ruGoN7LTIwozarbbR6p'),
+    ],
+
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
